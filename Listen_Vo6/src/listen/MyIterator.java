@@ -24,7 +24,7 @@ public class MyIterator <E extends Comparable<E>>
 	public E next() {
 		// 2 Aufgaben:
 		// - hole die Daten und gib diese zurueck
-		// - gene auf das naechste Element
+		// - gehe auf das naechste Element
 		
 		E tmp = currentElement.getData(); // hole die Daten
 		currentElement = currentElement.getNext(); // gehe auf das narchste Element
