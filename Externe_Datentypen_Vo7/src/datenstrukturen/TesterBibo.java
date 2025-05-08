@@ -36,9 +36,11 @@ public class TesterBibo {
 		try {
 			
 			raf = new RandomAccessFile(file, "rw");
-			raf.writeChars(json);
-//			raf.writeUTF(json);
+			raf.setLength(0);
 			raf.seek(0);
+			raf.write(json.getBytes("UTF-8"));
+//			raf.writeUTF(json);
+			
 			
 		} catch (IOException ioex) {
 			ioex.printStackTrace();
