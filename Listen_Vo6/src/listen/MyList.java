@@ -23,7 +23,7 @@ public class MyList <E extends Comparable<E>>
 	}
 	
 	public void add(E data) {
-		// neves Element am Anfang der Liste einfuegen
+		// neues Element am Anfang der Liste einfuegen
 		
 		// Teilschritt 1: Neues ListeneElement anlegen mit data und firstElement
 		ListenElement<E> newElement = new ListenElement<E> (firstElement, data);
@@ -33,7 +33,7 @@ public class MyList <E extends Comparable<E>>
 	}
 	
 	public E remove() throws NoSuchElementException {
-		if(firstElement != null) {
+		if(firstElement == null) {
 			throw new NoSuchElementException("keine Elemente mehr");
 		}
 		
@@ -47,9 +47,8 @@ public class MyList <E extends Comparable<E>>
 		ListenElement<E> currentElement = firstElement;
 		// beim Durchlaufen: Start beim firstElement
 		
-		
 		while(currentElement != null) {
-			erg = erg + "->" + currentElement.getData();
+			erg = erg + "-->" + currentElement.getData();
 			// toString ist bei getData geeignet implementiert
 			currentElement = currentElement.getNext();
 		}
