@@ -65,7 +65,7 @@ public class TesterBibo {
 		try {
 			
 			raf = new RandomAccessFile(file, "rw");
-			raf.setLength(0);
+			raf.setLength(0); // make file empty
 			raf.seek(0);
 			raf.write(json.getBytes("UTF-8"));
 			
