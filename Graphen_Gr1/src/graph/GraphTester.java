@@ -27,6 +27,8 @@ public class GraphTester {
 		
 		Tiefensuche ts = new Tiefensuche(ug, 0);
 		ts.gibWegAus(0, 8);
-	
+		
+		Breitensuche bs = new Breitensuche(ug, 0);
+		bs.gibWegAus(0, 8);
 	}
 }
