@@ -17,8 +17,9 @@ public class UnserGraph {
 			liste.add(new TreeSet<Integer>());
 	}
 	
-	public void addKante(int start, int ziel) {
-		if (start >= 0 && ziel >= 0 && start < anzahlKnoten && ziel < anzahlKnoten) {
+	public void addKante(int start , int ziel) {
+		
+		if (start >= 1 && ziel >= 1 && start < anzahlKnoten && ziel < anzahlKnoten) {
 			// start und ziel Knoten sind in der Liste vorhanden
 			
 			liste.get(start).add(ziel);
