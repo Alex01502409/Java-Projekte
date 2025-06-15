@@ -1,7 +1,5 @@
 package graph;
 
-import java.util.Iterator;
-
 public class Tiefensuche {
 	
 	private int[] edgeTo; // von welchen Knoten aus wurde ein anderere Knoten erreicht
@@ -28,6 +26,7 @@ public class Tiefensuche {
 	
 	public void gibWegAus(int start, int ziel) {
 		// einfache Umsetzung: ziel -> start
+		
 		String erg = "->" + ziel;
 		
 		int aktuellerWert = ziel;
