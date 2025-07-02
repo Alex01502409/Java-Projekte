@@ -117,13 +117,5 @@ public class StringsSpeichern {
 		System.out.println("\nDie Kommandozeilen-Parameter in umgekehrter Reihenfolge:");
 		  for (int i = args.length - 1; i >= 0; i--)
 	            System.out.println(liesAus("test", i));
-		  
-		  
-			
-		
-		  
-	        
-		  
 	}
-	
 }

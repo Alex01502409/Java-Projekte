@@ -9,7 +9,6 @@ import java.nio.file.StandardCopyOption;
 public class DemoNIO {
 
 	public static void main(String[] args) throws IOException {
-		// TODO Auto-generated method stub
 		
 		Path quelle = Paths.get("data/TextIF.txt");
 		Path ziel = Paths.get("data/KopieTextIF.txt");
