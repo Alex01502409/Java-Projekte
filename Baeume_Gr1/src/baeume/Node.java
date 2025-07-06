@@ -37,5 +37,4 @@ public class Node <E extends Comparable<E>> {
 	public void setRightTree(Node<E> rightTree) {
 		this.rightTree = rightTree;
 	}
-	
 }

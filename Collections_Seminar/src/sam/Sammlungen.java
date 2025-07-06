@@ -11,10 +11,10 @@ public class Sammlungen {
 
 	public static void main(String[] args) {
 //		 benutzungTreeSet();
-//		 benutzungHashSet();
+		 benutzungHashSet();
 //		 benutzungHashMap();
 
-		benutzungHashTable();
+//		benutzungHashTable();
 	}
 
 	public static void benutzungHashTable() {
@@ -63,7 +63,7 @@ public class Sammlungen {
 		}
 		
 		System.out.println("-----------");
-		mails.remove("Klaus Dohmen");
+		mails.remove("Max");
 		iterator = mails.entrySet().iterator();
 		
 		while (iterator.hasNext()) {

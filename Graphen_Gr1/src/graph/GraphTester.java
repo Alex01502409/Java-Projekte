@@ -4,10 +4,8 @@ public class GraphTester {
 
 	public static void main(String[] args) {
 		UnserGraph ug = new UnserGraph(13);
-		
 		// kleinster Knoten: 1
 		// groesste Knoten: 13
-		
 		ug.addKante(1, 2);
 		ug.addKante(1, 3);
 		ug.addKante(1, 5);

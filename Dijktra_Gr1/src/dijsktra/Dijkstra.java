@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class Dijkstra {
-	
 	private Node startpunkt;
 	private Node zielpunkt;
 	
@@ -13,15 +12,12 @@ public class Dijkstra {
 	public Dijkstra(Node startpunkt, Node zielpunkt) {
 		this.startpunkt = startpunkt;
 		this.zielpunkt = zielpunkt;
-		
 		zubearbeitenListe = new ArrayList<Node>();
-		
 		sucheWeg();
 	}
 	
 	private void sucheWeg() {
 		zubearbeitenListe.add(startpunkt);
-		
 		while(!zubearbeitenListe.isEmpty()) 
 			berechneNaechstenKnoten(zubearbeitenListe.get(0)); // da die Liste sortiert ist, ist der aktuelle Weg am Index 0
 	}

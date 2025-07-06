@@ -47,8 +47,27 @@ public class MyTree <E extends Comparable<E>> {
 		}else {
 			MyTree<E> left = new MyTree<E>(root.getLeftTree());
 			MyTree<E> right = new MyTree<E>(root.getRightTree());
-			return root.getData().toString() + " " + left.preOrder() + " " + right.preOrder(); 
+			return root.getData().toString() + " " + left.preOrder() + right.preOrder(); 
 		}
 	}
 	
+	public String postOrder() {
+		if (root == null) {
+			return "";
+		}else {
+			MyTree<E> left = new MyTree<E>(root.getLeftTree());
+			MyTree<E> right = new MyTree<E>(root.getRightTree());
+			return left.postOrder() + right.postOrder() + root.getData().toString() + " "; 
+		}
+	}
+	
+	public String inOrder() {
+		if (root == null) {
+			return "";
+		}else {
+			MyTree<E> left = new MyTree<E>(root.getLeftTree());
+			MyTree<E> right = new MyTree<E>(root.getRightTree());
+			return left.inOrder() + root.getData().toString() + " " + right.inOrder(); 
+		}
+	}
 }

@@ -3,7 +3,6 @@ package graph;
 import java.util.ArrayList;
 
 public class Breitensuche {
-	
 	private boolean[] marked;
 	private int[] edgeTo;
 	
@@ -17,10 +16,8 @@ public class Breitensuche {
 		ArrayList<Integer> warteschlange = new ArrayList<Integer>(); // enthaelt die Liste der "Wege"(Knoten) die noch bearbeitet werden muessen
 		marked[aktuellerKnoten] = true;
 		warteschlange.add(aktuellerKnoten); // who soll gestartet werden
-		
 		while(!warteschlange.isEmpty()) { // solange die Warteschlange nicht leer ist -> mache weiter
 			int ersterKnotenInWarteschlange = warteschlange.remove(0); // hole den ersten Knoten aus der Warteschlange
-			
 			for(int nachbarKnoten : ug.getNachbarn(ersterKnotenInWarteschlange)) { // hole Alle Nachbarknoten fuer den ersten Knoten in der Warteschlange
 				if(!marked[nachbarKnoten]) { // ist der Nachbarknoten noch nicht besucht -> mache weiter
 					marked[nachbarKnoten] = true;
@@ -34,7 +31,6 @@ public class Breitensuche {
 	public void gibWegAus(int start, int ende){ // ende -> start;
 		String erg = "->" + ende;
 		int aktuellerWert = ende;
-	
 		while(aktuellerWert != start) {
 			aktuellerWert = edgeTo[aktuellerWert];
 			erg = "->" + aktuellerWert + erg;
