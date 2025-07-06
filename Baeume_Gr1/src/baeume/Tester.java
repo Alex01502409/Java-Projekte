@@ -15,7 +15,7 @@ public class Tester {
 		baum.insert(8);
 		
 		System.out.println(baum.preOrder());
-		
+		System.out.println(baum.inOrder());
+		System.out.println(baum.postOrder());
 	}
-
 }

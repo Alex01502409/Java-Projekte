@@ -6,7 +6,6 @@ import java.util.TreeSet;
 
 public class UnserGraph {
 	private ArrayList<Set<Integer>> liste;
-	
 	private int anzahlKnoten;
 
 	public UnserGraph(int anzahlKnoten) {
@@ -18,14 +17,10 @@ public class UnserGraph {
 	}
 	
 	public void addKante(int start , int ziel) {
-		
 		if (start >= 1 && ziel >= 1 && start < anzahlKnoten && ziel < anzahlKnoten) {
 			// start und ziel Knoten sind in der Liste vorhanden
-			
 			liste.get(start).add(ziel);
-			
 			liste.get(ziel).add(start); // entfaellt bei einen gerichteten Graphen
-			
 		}
 	}
 
@@ -36,6 +31,4 @@ public class UnserGraph {
 	public Set<Integer> getNachbarn(int knoten){
 		return liste.get(knoten);
 	}
-	
-	
 }

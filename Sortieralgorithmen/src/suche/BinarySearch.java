@@ -1,6 +1,5 @@
 package suche;
 
-import java.util.Arrays;
 
 public class BinarySearch {
 
@@ -40,10 +39,7 @@ public class BinarySearch {
 				System.out.println("Steps taken to calculate: " + steps);
 				return middle; // target found
 				}
-			
 		}
-		
 		return -1; // target not found
 	}
-
 }

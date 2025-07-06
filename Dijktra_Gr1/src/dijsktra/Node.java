@@ -3,7 +3,6 @@ package dijsktra;
 import java.util.ArrayList;
 
 public class Node implements Comparable<Node> { // Comparable fuer die Sortierung
-	
 	private String name;
 	private ArrayList<Node> nachbarn;
 	private Node vorgaenger;
